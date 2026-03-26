@@ -13,10 +13,11 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row justify-center gap-4">
 
         <a
-          href="mailto:gjaitesh@gmail.com"
-          className="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-        >
-          Email Me
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=gjaitesh@gmail.com"
+            target="_blank"
+            className="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+            >
+            Email Me
         </a>
 
         <a

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center items-center text-center px-4">
+    <section id="home" className="h-screen flex flex-col justify-center items-center text-center px-4 py-24">
       <h1 className="text-4xl md:text-6xl font-bold">
         Hi, I’m <span className="text-blue-500">Jaitesh</span>
       </h1>
@@ -14,13 +14,17 @@ export default function Hero() {
       </p>
 
       <div className="mt-6 flex gap-4">
+        <a href="#projects">
         <button className="px-6 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition">
-          View Projects
+            View Projects
         </button>
+        </a>
 
-        <button className="px-6 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
-          Contact Me
-        </button>
+        <a href="#contact">
+          <button className="px-6 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
+            Contact Me
+          </button>
+        </a>
       </div>
     </section>
   );
