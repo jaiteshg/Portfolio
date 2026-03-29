@@ -22,7 +22,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-blue-500">Jaitesh</h1>
+        <h1 className="text-xl font-bold text-blue-500">JAITESH GODARA</h1>
 
         {/* Links */}
         <div className="hidden md:flex gap-6 text-gray-300">
