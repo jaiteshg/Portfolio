@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,7 +23,15 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-blue-500">JAITESH GODARA</h1>
+        <div className="flex items-center gap-2">
+          <Image
+            src="/logo.png"
+            alt="Jaitesh Logo"
+            width={40}
+            height={40}
+          />
+          <span className="text-lg font-semibold text-white">JAITESH GODARA</span>
+        </div>
 
         {/* Links */}
         <div className="hidden md:flex gap-6 text-gray-300">

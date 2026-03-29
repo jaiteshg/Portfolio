@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -7,7 +9,13 @@ export default function Projects() {
         Featured Projects
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      < motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 gap-8"
+        >
 
         <ProjectCard
           title="CodeFlex – AI Fitness Assistant"
@@ -15,6 +23,7 @@ export default function Projects() {
           tech="Next.js, TypeScript, Gemini AI, Vapi, Clerk, Convex"
           github="https://github.com/jaiteshg/codeflex"
           live="https://codeflex-jade.vercel.app/"
+          image="/codeflex.png"
         />
 
         <ProjectCard
@@ -23,6 +32,7 @@ export default function Projects() {
           tech="Next.js, Liveblocks, Clerk, Lexical, Sentry"
           github="https://github.com/jaiteshg/LiveDocs"
           live="https://live-docs-sepia-six.vercel.app/"
+          image="/livedocs.png"
         />
 
         <ProjectCard
@@ -31,9 +41,19 @@ export default function Projects() {
           tech="HTML, CSS, JavaScript, GSAP"
           github="https://github.com/jaiteshg/cocktail-landing-page"
           live="https://cocktail-landing-page-ashen.vercel.app/"
+          image="/cocktail.png"
         />
 
-      </div>
+        <ProjectCard
+          title="AI Code Reviewer & Refactor Tool"
+          description="An AI-powered developer tool that analyzes code, detects bugs, suggests improvements, and generates optimized code in real time."
+          tech="Next.js, TypeScript, Groq AI, Monaco Editor"
+          github="https://github.com/jaiteshg/AI-Code-Reviewer"
+          live="https://ai-code-reviewer-nine-ochre.vercel.app/"
+          image="/code-reviewer.png"
+        />
+
+      </motion.div>
     </section>
   );
 }
