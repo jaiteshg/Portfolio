@@ -26,6 +26,15 @@ export default function Projects() {
           image="/codeflex.png"
         />
 
+         <ProjectCard
+          title="DevOps CI/CD Dashboard"
+          description="A full-stack DevOps dashboard for real-time CI/CD monitoring using GitHub Actions"
+          tech="Next.js, React, Tailwind CSS, Chart.js , Next.js API Routes, MongoDB, GitHub Actions API "
+          github="https://github.com/jaiteshg/DevOps-Dashboard-for-CI-CD-Monitoring.git"
+          live="https://dev-ops-dashboard-for-ci-cd-monitoring.vercel.app/"
+          image="/dashboard.png"
+        />
+        
         <ProjectCard
           title="LiveDocs – Real-Time Collaborative Editor"
           description="Google Docs–like app with live multi-user editing, comments, and instant sync."
